@@ -9,6 +9,7 @@
 
 # Ejercicios con lambda
 
+import numpy as np
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
@@ -19,6 +20,10 @@ if __name__ == '__main__':
     # (len) de un string pasado como parámetro
 
     # len_string = lambda......
+
+    x = input('Ingrese el string del que desee saber la cantidad de caracteres:\n')
+    len_string = lambda x: len(x)
+    print('La cantidad de caracteres de la palabra ingresada es:', len_string(x))
 
     # 2)
     # Lista de string
@@ -35,5 +40,8 @@ if __name__ == '__main__':
     # directamente la lambda.
 
     # palabras_len = list(map....)
+
+    palabras_len = list(map(lambda x: len(x), palabras))
+    print('El vector de longitudes de las palabras\t', palabras, '\nes:\n', palabras_len)
 
     print("terminamos")

@@ -9,6 +9,8 @@
 
 # Ejercicios con comprensión de listas
 
+import numpy as np
+import random
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
@@ -21,18 +23,24 @@ if __name__ == '__main__':
 
     # lista_0_10 = [......]
 
+    lista_0_10 = [x for x in range(11)]
+    print('Lista del 1 al 10:', lista_0_10)
+
     # 2)
     # Generar una lista a partir de comprensión de listas,
     # esta lista generada deberá contener la tabla del 5,
     # desde el múltiplo 0 al múltiplo 10
     # El resultado esperado es:
     # [0 5 10 15 20 25 30 35 40 45 50]
-    # Utilizar comprensión de listas para generar essa lista
+    # Utilizar comprensión de listas para generar esa lista
     # Lo esperable es que realicen una lista de 11 elementos,
     # del 0 al 10 (como el ejer anterior) pero que cada
     # elemento lo multipliquen x5.
 
     # tabla_5 = [......]
+
+    tabla_5 = [x*5 for x in range(11)]
+    print('Lista tabla del 5:', tabla_5)
 
     # 3)
     # Generar una lista a partir de comprensión de listas,
@@ -45,4 +53,7 @@ if __name__ == '__main__':
 
     # dias_mes = [.....]
 
+    dias_mes = [random.randint(1,30) for x in range(10)]
+    print('Lista días del mes:', dias_mes)
+    
     print("terminamos")

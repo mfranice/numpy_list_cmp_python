@@ -9,6 +9,7 @@
 
 # Ejercicios con lambda
 
+import numpy as np
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
@@ -20,6 +21,10 @@ if __name__ == '__main__':
 
     # potencia_2 = lambda x:......
     # pot_3 = potencia_2(3)
+
+    x = int(input('Ingrese el valor que desea elevar al cuadrado\n'))
+    cuadrado = lambda x: x**2
+    print('El resultado es:', cuadrado(x))
 
     # 2)
     # Utilice la función map para mapear una lambda expression
@@ -35,6 +40,8 @@ if __name__ == '__main__':
     # Lista de numeros
     numeros = [1, -5, 4, 3]
 
-    # numeros_potencia = list(map....)
+    numeros_cuadrados = list(map(lambda x: x**2, numeros))
 
+    # numeros_potencia = list(map....)
+    print('La lista de números elevados al cuadrado es:', numeros_cuadrados)
     print("terminamos")
